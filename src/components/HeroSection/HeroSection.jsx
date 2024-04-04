@@ -54,7 +54,7 @@ function HeroSection({ url }) {
     return (
 
         <>
-            <Slide {...properties}>
+            <Slide {...properties} style={{ display: 'flex', alignItems: 'center' }}>
                 {heroMovies.map((movie, index) => (
                     <Box key={movie.id} sx={{
                         backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
