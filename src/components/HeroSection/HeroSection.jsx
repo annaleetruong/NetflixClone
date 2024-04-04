@@ -47,14 +47,14 @@ function HeroSection({ url }) {
 
 
     const properties = {
-        prevArrow: <IconButton sx={{ color: '#fff' }}><ArrowBackIosIcon /></IconButton>,
-        nextArrow: <IconButton sx={{ color: '#fff' }}><ArrowForwardIosIcon /></IconButton>
+        prevArrow: <IconButton sx={{ color: '#fff', display: 'none' }}><ArrowBackIosIcon /></IconButton>,
+        nextArrow: <IconButton sx={{ color: '#fff', display: 'none' }}><ArrowForwardIosIcon /></IconButton>
     }
 
     return (
 
         <>
-            <Slide {...properties} style={{ display: '-webkit-box', webKitBoxAlign: 'center' }}>
+            <Slide {...properties} cssClass='carousel-heroSection'>
                 {heroMovies.map((movie, index) => (
                     <Box key={movie.id} sx={{
                         backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
