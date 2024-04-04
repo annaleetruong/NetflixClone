@@ -15,7 +15,7 @@ HeroSection.propTypes = {
 function HeroSection({ url }) {
     const [heroMovies, setHeroMovies] = useState([]);
     const [trailer, setTrailer] = useState([]);
-    const [showTrailer, setShowTrailer] = useState([]);
+    const [showTrailer, setShowTrailer] = useState(false);
     const [trailers, setTrailers] = useState([]);
 
 
